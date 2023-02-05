@@ -452,8 +452,15 @@ color: var(--white-smoke);
 .testimonial .title{
     color: #fff;
 }
+/* .owl-stage , .owl-stage-outer */
+.owl-stage{
+    max-height: 50vh;
+}
+.owl-stage-outer{
+    max-height: 100vh;
+}
 .testimonial .row{
-    margin-top: 2rem;
+    height: 100%;
 }
 .testimonial-img{
     border: 4px solid #fff;
