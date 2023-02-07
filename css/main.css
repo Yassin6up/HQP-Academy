@@ -96,6 +96,10 @@ section{
     background-color: #fff;
     z-index: 999;
 }
+.translait{
+    width: 50px!important;
+    color: red;
+}
 .brand-and-toggler{
     font-size: 1.65rem;
     padding: 0.8rem 0;
@@ -398,7 +402,6 @@ font-size: large;
 position: absolute;
 box-shadow: 0 0 5px deeppink ;
 transform: translateX(25%) translateY(-150%);
-
 font-family: monospace;
 font-weight: 900;
 color: var(--white-smoke);
@@ -420,7 +423,6 @@ color: var(--white-smoke);
     font-weight: 500;
     color: var(--night-rider);
     position: absolute;
-    
     padding-left: 100px;
     padding-top: 25px;
     font-size: 10px;
@@ -442,7 +444,37 @@ color: var(--white-smoke);
     font-weight: large ;
     font-size: larger;
 }
-
+.BtnLearn{
+    background-color: var(--mount-meadow) ;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 0 10px var(--mount-meadow);
+    padding: 5px;
+    border:2px solid var(--mount-meadow);
+    width: 60%;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: medium;
+    transition: 0.5s all;
+}
+.BtnLearn:hover{
+    background-color: var(--white-smoke);
+    color: var(--mount-meadow);
+    box-shadow: none;
+}
+.confirm{
+    background-color: darkorchid ;
+    box-shadow: 0 0 10px darkorchid;
+    border:2px solid darkorchid;
+}
+.confirm:hover{
+    color: darkorchid;
+}
+.booked{
+    color: var(--mount-meadow);
+    
+}
 /* testimonial */
 .testimonial{
     background-color: #18c3f3;
@@ -517,6 +549,23 @@ color: var(--white-smoke);
     border-bottom: 1.5px solid #f0f0f0;
     outline: 0;
 }
+.form{
+    width: 70%;
+    font-size: 1.1rem;
+    margin: 0.2rem 0;
+    padding: 0.8rem 0.6rem;
+    border: none;
+    border-bottom: 1.5px solid #f0f0f0;
+    outline: 0;
+}
+.form::placeholder{
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.8;
+}
+.form:focus{
+    border-color: var(--mount-meadow);
+}
 .contact-left form input::placeholder,
 .contact-left form textarea::placeholder{
     font-size: 1.1rem;
@@ -543,6 +592,28 @@ color: var(--white-smoke);
 }
 .contact-right div{
     margin: 2rem 0;
+}
+/* data user */
+.data{
+    font-weight: 800;
+}
+.domains{
+    font-weight: 700;
+    
+}
+.domains li{
+    text-align: left;
+    
+    transform: translateY(-50%);
+}
+.domains li::before{
+    content: "";
+    width: 5px;
+    height: 100%;
+    left: -6px;
+    border-radius: 50px;
+    background-color: #18c3f3;
+    position: absolute;
 }
 
 /* footer */

@@ -63,6 +63,7 @@
               <li class = "nav-item">
                 <a href = "#contact" class = "nav-link">contact</a>
               </li>
+              
             </ul>
           </div>
         </div>
@@ -398,12 +399,12 @@
 
         <div class = "row wow animate__animated animate__fadeInUp animate__slow">
           <div class = "pricing-item" >
-            <h2>Standard Package</h2>
+            <h2>Standard</h2>
             <div class = "price">
               <span>300 <span class="dh">Dh</span> </span>
               <span class = "text">Monthly</span>
             </div>
-            <ul>
+            <ul id="standarddata">
               
               <li><i class="fa-solid fa-check"></i>Special roadmap</li>
               <li><i class="fa-solid fa-check"></i>Personal follow-up</li>
@@ -411,39 +412,42 @@
               <li><i class="fa-solid fa-check"style="color: red;"></i>Consulting</li>
               <li><i class="fa-solid fa-check"></i>Certificate</li>
             </ul>
+            <button id="StandardBTN" class="BtnLearn">Learn Now</button>
           </div>
 
-          <div class = "pricing-item" style="border:3px solid rebeccapurple; box-shadow: 0 0 50px 0px rebeccapurple;" >
+          <div class = "pricing-item" style="border:3px solid var(--mount-meadow); box-shadow: 0 0 40px 0px var(--mount-meadow);" >
             <center>
             <div class="Badge">Most popular</div>
             </center>
-            <h2>Professional Version</h2>
+            <h2>Professional</h2>
             <div class = "price">
               <span> <del class="dh">-999dh</del>  820 <span class="dh">Dh</span></span>
               <span class = "text">The whole cycle</span>
             </div>
-            <ul>
+            <ul id="proData">
               <li><i class="fa-solid fa-check"></i>Special roadmap</li>
               <li><i class="fa-solid fa-check"></i>Personal follow-up</li>
               <li><i class="fa-solid fa-check"></i>Practice with project</li>
               <li><i class="fa-solid fa-check"></i>Consulting</li>
               <li><i class="fa-solid fa-check"></i>Certificate</li>
             </ul>
+            <button id="ProfessionalBTN" class="BtnLearn">Learn Now</button>
           </div>
 
           <div class = "pricing-item">
-            <h2>Basic Package</h2>
+            <h2>Basic</h2>
             <div class = "price">
-              <span>280 <span class="dh">Dh</span></span>
+              <span>FREE <span class="dh"></span></span>
               <span class = "text">Monthly</span>
             </div>
-            <ul>
-              <li><i class="fa-solid fa-check" style="color: red;"></i>Special roadmap</li>
+            <ul id="basicdata">
+              <li><i class="fa-solid fa-check"></i>Special roadmap</li>
               <li><i class="fa-solid fa-check"style="color: red;"></i> follow-up</li>
               <li><i class="fa-solid fa-check"></i>Intensive Practice</li>
               <li><i class="fa-solid fa-check"style="color: red;"></i>Consulting</li>
-              <li><i class="fa-solid fa-check"></i>Certificate</li>
+              <li><i class="fa-solid fa-check"style="color: red;"></i>Certificate</li>
             </ul>
+            <button id="BasicBTN" class="BtnLearn">Learn Now</button>
           </div>
         </div>
       </div>
@@ -526,6 +530,7 @@
           </div>
         </div>
       </div>
+      <div id="google_translate_element"></div>
     </section>
     <!-- end of contact section -->
 
@@ -543,12 +548,22 @@
           <a target="_blank" href = "https://wa.link/h8x85z" class = "center">
             <i class = "fab fa-whatsapp"></i>
           </a>
+          
         </div>
+       
       </div>
+      
     </footer>
     <!-- end of footer -->
-
-
+    <!-- translait links -->
+    
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
+      </script>
+      
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <!-- jQuery -->
     <script src = "resources/jquery-3.5.1.js"></script>
     <!-- magnific popup -->
@@ -562,5 +577,6 @@
     <!-- custom js -->
     <script src="js/script.js" ></script>
     <script src="js/smtp.js"></script>
+    <script src="js/Login.js"></script>
   </body>
 </html>
