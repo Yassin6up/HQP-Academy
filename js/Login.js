@@ -120,9 +120,19 @@ var basicdata = document.getElementById("basicdata");
 basic.addEventListener("click", () => {
   basicdata.innerHTML = forms.BasicForm();
   basic.style.display = "none";
-  
+  document.getElementById("BasicForm").addEventListener("submit", ev=>{
+  ev.preventDefault();
+  Swal.fire({
+    position: "center",
+    icon: "success",
+    title: "Free Pack ,  Welccome to discord Server",
+    showConfirmButton: true,
+    timer: 1500,
+  });
+  window.location.replace('https://discord.gg/mcF5wSMz')  
+  }
 
-  
+  )
 });
 
 
