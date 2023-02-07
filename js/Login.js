@@ -68,7 +68,7 @@ class inputs {
     <li class='list-group-item'><input type="checkbox" id="FrontEnd" > <label for='FrontEnd'>FrontEnd</label> </li>
     <li class='list-group-item'><input type="checkbox" id='BackEnd' ><label for='BackEnd'>BackEnd</label></li>
     <li class='list-group-item'><input type="checkbox" id='C_Cpp' ><label for='C_Cpp'>C/C++</label></li>
-    <li class='list-group-item'><input type="checkbox" id='Ceyber'> <label for='Ceyber'>ceyber</label> </li>
+    <li class='list-group-item'><input type="checkbox" id='Ceyber'> <label for='Ceyber'>Ceyber Security</label> </li>
     <li class='list-group-item'><input type="checkbox" id='Python' > <label for='Python'>Python</label></li>
     
     </ul>
