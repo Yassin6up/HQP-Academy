@@ -46,23 +46,39 @@
           <div class = "navbar-collapse">
             <ul class = "navbar-nav">
               <li class = "nav-item">
-                <a href = "#intro" class = "nav-link">Home</a>
+                <a href = "#intro" data-lang="home" class = "nav-link">Home</a>
               </li>
               <li class = "nav-item">
-                <a href = "#feature" class = "nav-link">Goals</a>
+                <a data-lang="feature" href = "#feature" class = "nav-link">Goals</a>
               </li>
               <li class = "nav-item">
-                <a href = "#team" class = "nav-link">Groups</a>
+                <a href = "#team" data-lang="Groups" class = "nav-link">Groups</a>
               </li>
               <li class = "nav-item">
-                <a href = "#pricing" class = "nav-link">Courses</a>
+                <a href = "#pricing" data-lang="Courses" class = "nav-link">Courses</a>
               </li>
               <li class = "nav-item">
-                <a href = "#testimonial" class = "nav-link">testimonial</a>
+                <a href = "#testimonial" data-lang="Testimonial" class = "nav-link">Testimonial</a>
               </li>
               <li class = "nav-item">
-                <a href = "#contact" class = "nav-link">contact</a>
+                <a href = "#contact" data-lang="contact" class = "nav-link">Contact</a>
               </li>
+              <li class = "nav-item">
+                <a  class = "nav-link" href="./Login_Page/index.html" >Login</a>
+              </li>
+              <!-- lang -->
+            <ul class="langDiv">
+              <time
+                style="cursor: pointer"
+                id="langEn"
+                data-type="en"
+                class=" nav-item active"
+                > <img class="icons" src="assets/united-states-of-america.png" alt="English" >  </time
+              >
+              <time class="nav-item" style="cursor: pointer" id="langAr" data-type="ar"> <img class="icons" src="assets/morocco.png" alt="Arabic"> </time>
+            </ul>
+          </ul>
+
               
             </ul>
           </div>
@@ -70,14 +86,14 @@
       </nav>
 
       <div class = "hero-div center container">
-        <h1>You can made it with us</h1>
-        <p class = "animate__animated animate__fadeInUp animate__slow">Welcome to future community</p>
+        <h1 data-lang="title1">You can made it with us</h1>
+        <p  class = "animate__animated animate__fadeInUp animate__slow" data-lang="desc1">Welcome to future community</p>
 
-        <div class = "hero-btns animate__animated animate__fadeInUp animate__slow">
+        <div  class = "hero-btns animate__animated animate__fadeInUp animate__slow">
           <a href="#team">
-          <button type = "button"  class = "btn-trans">learn more</button></a>
+          <button type = "button"  class = "btn-trans" data-lang="Explore">Explore</button></a>
           <a href="#feature">
-          <button type = "button" class = "btn-white">Who are we</button>
+          <button type = "button"  class = "btn-white" data-lang="Follow Us">Who are we</button>
         </a>
         </div>
       </div>
@@ -90,23 +106,23 @@
         <div class = "row">
           <div class = "detail-item wow animate__animated animate__fadeInLeft animate__slow">
             <span><i class="fa-solid fa-laptop"></i></span>
-            <h2>Tech</h2>
+            <h2 data-lang="Tech">Tech</h2>
             <div class = "line"></div>
-            <p class = "text">HQP helps tech learning. Collaborative and supportive environment for tech skill advancement.</p>
+            <p class = "text" data-lang="desc2">HQP helps tech learning. Collaborative and supportive environment for tech skill advancement.</p>
           </div>
 
           <div class = "detail-item wow animate__animated animate__fadeInUp animate__s">
             <span><i class="fa-solid fa-atom"></i></span>
-            <h2>Science</h2>
+            <h2 data-lang="Science">Science</h2>
             <div class = "line"></div>
-            <p class = "text">Community posts on science. Accessible knowledge from experts and enthusiasts. Fosters love of learning.</p>
+            <p class = "text" data-lang="ScienceDesc">Community posts on science. Accessible knowledge from experts and enthusiasts. Fosters love of learning.</p>
           </div>
 
           <div class = "detail-item wow animate__animated animate__fadeInRight animate__slow">
             <span><i class="fa-sharp fa-solid fa-handshake-angle"></i></span>
-            <h2>Help</h2>
+            <h2 data-lang="Help">Help</h2>
             <div class = "line"></div>
-            <p class = "text">Community with mutual aid. Collaboration and support for collective growth.
+            <p class = "text" data-lang="HelpDesc">Community with mutual aid. Collaboration and support for collective growth.
             </p>
           </div>
         </div>
@@ -123,22 +139,22 @@
           </div>
           <div class = "feature-right wow animate__animated animate__fadeInUp animate__slow">
             <div class = "title">
-              <h2>Who are we ?</h2>
-              <p class = "text">HQP is a Moroccan non-profit, passionate high school students. Seeks brilliant individuals for community development. Aims for self-fulfillment, understanding, respect and a peaceful community.
+              <h2 data-lang="WhoAre">Who are we ?</h2>
+              <p class = "text" data-lang="Desc">HQP is a Moroccan non-profit, passionate high school students. Seeks brilliant individuals for community development. Aims for self-fulfillment, understanding, respect and a peaceful community.
               </p>
             </div>
 
             <div class = "feature-item">
               <span><i class="fa-solid fa-lightbulb"></i></span>
               <div>
-                <p class = "text"style="    margin-top: -10px;">we will provide an inspired space of work where you can be motivated in</p>
+                <p class = "text" data-lang="Goal1">we will provide an inspired space of work where you can be motivated in</p>
               </div>
             </div>
 
             <div class = "feature-item">
               <span><i class="fa-solid fa-circle-info"></i></span>
               <div>
-                <p class = "text" style="    margin-top: -10px;">we will listen to all your ideas and help you implement them in real life on top of that we are a community of talented people</p>
+                <p class = "text" data-lang="Goal2" >we will listen to all your ideas and help you implement them in real life on top of that we are a community of talented people</p>
               </div>
             </div>
 
@@ -146,7 +162,7 @@
             <div class = "feature-item">
               <span><i class="fa-solid fa-circle-check"></i></span>
               <div>
-                <p class = "text" style="    margin-top: -10px;">The community can help you success in your business relationships for life and more benefits.</p>
+                <p class = "text" data-lang="Goal3" >The community can help you success in your business relationships for life and more benefits.</p>
               </div>
             </div>
           </div>
@@ -162,8 +178,8 @@
         <a class="center popup-youtube" href="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2F100015338087618%2Fvideos%2F844537409965578%2F&show_text=false&width=560&t=0" >
           <i class = "fas fa-play"></i>
         </a>
-        <h2 class = "wow animate__animated animate__fadeInUp animate__slow">Our courses</h2>
-        <p class = "wow animate__animated animate__fadeInUp animate__slow">A community offering paid tutorials in programming covers essential skills like front-end/back-end dev, C++, and cyber security, helping individuals gain in-demand skills and boosting their career prospects.</p>
+        <h2 class = "wow animate__animated animate__fadeInUp animate__slow" data-lang="courses">Our courses</h2>
+        <p class = "wow animate__animated animate__fadeInUp animate__slow" data-lang="DiscCours" >A community offering paid tutorials in programming covers essential skills like front-end/back-end dev, C++, and cyber security, helping individuals gain in-demand skills and boosting their career prospects.</p>
       </div>
     </section>
     <!-- end of sample video section -->
@@ -172,8 +188,8 @@
     <section class = "team" id = "team">
       <div class = "container">
         <div class = "title">
-          <h2 class = "wow animate__animated animate__bounceIn animate__slow">Our WhatsApp groups</h2>
-          <p class = "text">join to the groups you are intrested in</p>
+          <h2 class = "wow animate__animated animate__bounceIn animate__slow" data-lang="Groops">Our WhatsApp groups</h2>
+          <p class = "text" data-lang="GroopsDesc">join to the groups you are intrested in</p>
         </div>
 
         <div class = "row owl-carousel owl-theme wow animate__animated animate__fadeInUp animate__slow">
@@ -189,8 +205,8 @@
               </div>
             </div>
             <div class = "team-info">
-              <h3>The main group</h3>
-              <span>principal</span>
+              <h3 data-lang="main">The main group</h3>
+              <span data-lang="principal">principal</span>
             </div>
           </div>
 
@@ -204,8 +220,8 @@
               </div>
             </div>
             <div class = "team-info">
-              <h3>Front-end</h3>
-              <span>Development</span>
+              <h3 data-lang="Front-end">Front-end</h3>
+              <span data-lang="Front">Development</span>
             </div>
           </div>
 
@@ -219,8 +235,8 @@
               </div>
             </div>
             <div class = "team-info">
-              <h3> Back-end</h3>
-              <span>Development</span>
+              <h3 data-lang="Back-end">Back-end</h3>
+              <span data-lang="Back">Development</span>
             </div>
           </div>
 
@@ -235,8 +251,8 @@
               </div>
             </div>
             <div class = "team-info">
-              <h3>Cyber Security</h3>
-              <span>Security</span>
+              <h3 data-lang="Cyber-Security">Cyber Security</h3>
+              <span data-lang="Cyber">Security</span>
             </div>
           </div>
 
@@ -250,8 +266,8 @@
               </div>
             </div>
             <div class = "team-info">
-              <h3>Book and Topic</h3>
-              <span>Culture</span>
+              <h3 data-lang="books">Book and Topic</h3>
+              <span data-lang="Culture">Culture</span>
             </div>
           </div>
 
@@ -266,8 +282,8 @@
               </div>
             </div>
             <div class = "team-info">
-              <h3>Communication English</h3>
-              <span>Languages</span>
+              <h3 data-lang="Communication">Communication English</h3>
+              <span data-lang="Languages">Languages</span>
             </div>
           </div>
 
@@ -282,8 +298,8 @@
               </div>
             </div>
             <div class = "team-info">
-              <h3>Design and editing</h3>
-              <span>Visualisation</span>
+              <h3 data-lang="design">Design and editing</h3>
+              <span data-lang="Visualisation">Visualisation</span>
             </div>
           </div>
 
@@ -298,8 +314,8 @@
               </div>
             </div>
             <div class = "team-info">
-              <h3>E-commerce and Dropshipping</h3>
-              <span>commercial</span>
+              <h3 data-lang="E-commerce">E-commerce and Dropshipping</h3>
+              <span data-lang="commercial">commercial</span>
             </div>
           </div>
         </div>
@@ -311,77 +327,38 @@
     <section class = "faq">
       <div class = "container">
         <div class = "title">
-          <h2 class = "wow animate__animated animate__bounceIn animate__slow">Have Any Questions?</h2>
-          <p class = "text">Answer to the most common questions</p>
+          <h2 class = "wow animate__animated animate__bounceIn animate__slow" data-lang="Questions">Have Any Questions?</h2>
+          <p class = "text" data-lang="Answer">Answer to the most common questions</p>
         </div>
 
         <div class = "row wow animate__animated animate__fadeInUp animate__slow">
           <div class = "faq-item">
             <div class = "faq-head">
-              <h3>What is Web Development?</h3>
+              <h3 data-lang="Vip">How can you apply to Vip membership ?</h3>
               <span><i class = "fas fa-plus"></i></span>
             </div>
             <div class = "faq-content">
-              <p class = "text">Web development is the building and maintenance of websites; it’s the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience.</p>
-              <p class = "text">Web developers, or ‘devs’, do this by using a variety of coding languages. The languages they use depends on the types of tasks they are preforming and the platforms on which they are working.</p>
-            
-            </div>
-          </div>
-
-          <div class = "faq-item">
-            <div class = "faq-head">
-              <h3>Which technologies are important for web development?</h3>
-              <span><i class = "fas fa-plus"></i></span>
-            </div>
-            <div class = "faq-content">
-              <ul class="ulFaq">
-                <li>Progressive Web App. Progressive web app has characteristics of both website and a locally installed program. ...</li>
-                <li>Yii. Yii is an open-source web application development framework. ...</li>
-                <li>Meteor JS. Meteor JS uses Node. ...</li>
-                <li>Django</li>
-                <li>Motion UI</li>
-                <li>Blockchain</li>
-                <li>Laravel</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class = "faq-item">
-            <div class = "faq-head">
-              <h3>What type of website are good for business purpose?</h3>
-              <span><i class = "fas fa-plus"></i></span>
-            </div>
-            <div class = "faq-content">
-              <p class = "text">If you want to sell your products, an eCommerce website is your best bet. Ecommerce platforms allow people to directly purchase products online with a few clicks of a button.</p>
+              <p class = "text" data-lang="description1">You can apply to our Vip membership by first choosing your field. What do you want to learn and why next choose your plan and contact us for more info</p>
             </div>
           </div>
           <div class = "faq-item">
             <div class = "faq-head">
-              <h3>How can you apply to Vip membership ?</h3>
+              <h3 data-lang="classes">Do we do volunteering classes?</h3>
               <span><i class = "fas fa-plus"></i></span>
             </div>
             <div class = "faq-content">
-              <p class = "text">You can apply to our Vip membership by first choosing your field. What do you want to learn and why next choose your plan and contact us for more info</p>
+              <p class = "text" data-lang="description2">Yes, we do volunteering classes which are supported by hqp people and always our classes are available on  our discord server</p>
             </div>
           </div>
           <div class = "faq-item">
             <div class = "faq-head">
-              <h3>Do we do volunteering classes?</h3>
+              <h3 data-lang="Why">Why us?</h3>
               <span><i class = "fas fa-plus"></i></span>
             </div>
             <div class = "faq-content">
-              <p class = "text">Yes, we do volunteering classes which are supported by hqp people and always our classes are available on  our discord server</p>
-            </div>
-          </div>
-          <div class = "faq-item">
-            <div class = "faq-head">
-              <h3>Why us?</h3>
-              <span><i class = "fas fa-plus"></i></span>
-            </div>
-            <div class = "faq-content">
-              <p class = "text">Being part of a. High quality people community can bring many benefits to individuals. It can provide a sense of belonging and connection with others who share similar interests, beliefs, or experiences. Communities can also offer opportunities for social support, personal growth, and learning. Members can participate in activities, events, and discussions that bring people together and foster a sense of unity.
+              <p class = "text" data-lang="description3">Being part of a. High quality people community can bring many benefits to individuals. It can provide a sense of belonging and connection with others who share similar interests, beliefs, or experiences. Communities can also offer opportunities for social support, personal growth, and learning. Members can participate in activities, events, and discussions that bring people together and foster a sense of unity.
               </p>
-              <p class = "text">Additionally, being part of a community can provide a platform for individuals to give and receive help, support, and encouragement. Communities can also help to build a network of resources and connections that can be useful for personal or professional growth.</p>
+              <p class = "text" data-lang="description4">Additionally, being part of a community can provide a platform for individuals to give and receive help, support, and encouragement. Communities can also help to build a network of resources and connections that can be useful for personal or professional growth.</p>
             </div>
           </div>
         </div>
@@ -393,16 +370,16 @@
       <center>
       <div class = "container">
         <div class = "title" >
-          <h2 class = "wow animate__animated animate__bounceIn animate__slow">Our Package</h2>
-          <p class = "text" >Choose The Plane you want</p>
+          <h2 class = "wow animate__animated animate__bounceIn animate__slow" data-lang="Package">Our Package</h2>
+          <p class = "text" data-lang="Plane" >Choose The Plane you want</p>
         </div>
 
         <div class = "row wow animate__animated animate__fadeInUp animate__slow">
           <div class = "pricing-item" >
-            <h2>Standard</h2>
+            <h2 data-lang="Standard">Standard</h2>
             <div class = "price">
               <span>300 <span class="dh">Dh</span> </span>
-              <span class = "text">Monthly</span>
+              <span class = "text" data-lang="Monthly" >Monthly</span>
             </div>
             <ul id="standarddata">
               
@@ -412,17 +389,17 @@
               <li><i class="fa-solid fa-check"style="color: red;"></i>Consulting</li>
               <li><i class="fa-solid fa-check"></i>Certificate</li>
             </ul>
-            <button id="StandardBTN" class="BtnLearn">Learn Now</button>
+            <button id="StandardBTN" class="BtnLearn" data-lang="Learn Now">Learn Now</button>
           </div>
-
+          
           <div class = "pricing-item" style="border:3px solid var(--mount-meadow); box-shadow: 0 0 40px 0px var(--mount-meadow);" >
             <center>
-            <div class="Badge">Most popular</div>
+            <div class="Badge" data-lang="popular">Most popular</div>
             </center>
-            <h2>Professional</h2>
+            <h2 data-lang="Professional">Professional</h2>
             <div class = "price">
               <span> <del class="dh">-999dh</del>  820 <span class="dh">Dh</span></span>
-              <span class = "text">The whole cycle</span>
+              <span class = "text" data-lang="cycle">The whole cycle</span>
             </div>
             <ul id="proData">
               <li><i class="fa-solid fa-check"></i>Special roadmap</li>
@@ -431,14 +408,14 @@
               <li><i class="fa-solid fa-check"></i>Consulting</li>
               <li><i class="fa-solid fa-check"></i>Certificate</li>
             </ul>
-            <button id="ProfessionalBTN" class="BtnLearn">Learn Now</button>
+            <button id="ProfessionalBTN" class="BtnLearn" data-lang="Learn Now">Learn Now</button>
           </div>
 
           <div class = "pricing-item">
-            <h2>Basic</h2>
+            <h2 data-lang="Basic">Basic</h2>
             <div class = "price">
-              <span>FREE <span class="dh"></span></span>
-              <span class = "text">Monthly</span>
+              <span data-lang="FREE">FREE <span class="dh"></span></span>
+              <span class = "text" data-lang="Monthly">Monthly</span>
             </div>
             <ul id="basicdata">
               <li><i class="fa-solid fa-check"></i>Special roadmap</li>
@@ -447,7 +424,7 @@
               <li><i class="fa-solid fa-check"style="color: red;"></i>Consulting</li>
               <li><i class="fa-solid fa-check"style="color: red;"></i>Certificate</li>
             </ul>
-            <button id="BasicBTN" class="BtnLearn">Learn Now</button>
+            <button id="BasicBTN" class="BtnLearn" data-lang="Learn Now">Learn Now</button>
           </div>
         </div>
       </div>
@@ -459,8 +436,8 @@
     <section class = "testimonial" id = "testimonial">
       <div class = "container">
         <div class = "title">
-          <h2 class = "wow animate__animated animate__bounceIn animate__slow">Testimonials Words</h2>
-          <p class = "text">Opinions of members in this community</p>
+          <h2 class = "wow animate__animated animate__bounceIn animate__slow" data-lang="titlewords">Testimonials Words</h2>
+          <p class = "text" data-lang="opinions">Opinions of members in this community</p>
         </div>
         <div style="height: fit-content;" class = "row owl-carousel owl-theme wow animate__animated animate__fadeInUp animate__slow">
           
@@ -469,30 +446,30 @@
             <div class = "testimonial-img">
               <img src = "./assets/Student/Omaima.jpeg" alt = "">
             </div>
-            <p>I'm a student in university the second year I chose to study at HQP because it was a good opportunity to learn more about C++ language and java i really recommend it because my class with prof anas was so interesting  i wish i could lean more for them and thank you so much for this chance</p>
-            <span>omaima kharraja</span>
+            <p data-lang="omaimaDesc">I'm a student in university the second year I chose to study at HQP because it was a good opportunity to learn more about C++ language and java i really recommend it because my class with prof anas was so interesting  i wish i could lean more for them and thank you so much for this chance</p>
+            <span data-lang="omaimaName">omaima kharraja</span>
           </div>
           <div class = "testimonial-item">
             <div class = "testimonial-img">
               <img src = "./assets/Student/redwan.jpeg" alt = "">
             </div>
-            <p>Je suis très heureux d'avoir rejoint ce groupe, et je tiens à remercier tous ses membres pour leur participation et pour m'avoir aidé à développer mon niveaux en programmation et tout ce qui s'y rapporte</p>
-            <span>Redwan el yazidi</span>
+            <p data-lang="redwanDesc" >Je suis très heureux d'avoir rejoint ce groupe, et je tiens à remercier tous ses membres pour leur participation et pour m'avoir aidé à développer mon niveaux en programmation et tout ce qui s'y rapporte</p>
+            <span data-lang="redwanName">Redwan el yazidi</span>
           </div>
           <div class = "testimonial-item">
             <div class = "testimonial-img">
               <img src = "./assets/Student/fatimzahra.jpeg" alt = "">
             </div>
-            <p>İt's an amazing experience.i learned a lot of things and I'm so glad of being a vip member with HQP</p>
-            <span>Fatimzahra Kamili</span>
+            <p data-lang="fatimaDesc">İt's an amazing experience.i learned a lot of things and I'm so glad of being a vip member with HQP</p>
+            <span data-lang="Fatimzahra Kamili">Fatimzahra Kamili</span>
           </div>
 
           <div class = "testimonial-item">
             <div class = "testimonial-img">
               <img src = "./assets/Student/fadma.jpeg" alt = "">
             </div>
-            <p>Both teachers Yassine and Anas full of knowledge and excitement.. 5 stars all day long.. and punctual eveytime they use the most simple method so even for a new born it's a walk in the park !! ...</p>
-            <span>Fadma Abaiji</span>
+            <p data-lang="fadmaDesc">Both teachers Yassine and Anas full of knowledge and excitement.. 5 stars all day long.. and punctual eveytime they use the most simple method so even for a new born it's a walk in the park !! ...</p>
+            <span data-lang="Fadma Abaiji">Fadma Abaiji</span>
           </div>
         </div>
       </div>
@@ -503,34 +480,32 @@
     <section class = "contact" id = "contact">
       <div class = "container">
         <div class = "title">
-          <h2 class = "wow animate__animated animate__bounceIn animate__slow">Contact Us</h2>
+          <h2 class = "wow animate__animated animate__bounceIn animate__slow" data-lang="Contact">Contact Us</h2>
         </div>
 
         <div class = "row wow animate__animated animate__fadeInUp animate__slow">
           <div class = "contact-left">
-            <h2>Send Message Here</h2>
+            <h2 data-lang="Message">Send Message Here</h2>
             <form  id="form">
               <input id="userName" type = "text" class = "form-control" placeholder="Name">
               <input id="userNamber" type="tel" class="form-control" placeholder="Phone Namber">
               <input id="userEmail" type = "email" class = "form-control" placeholder="Email">
               <textarea id="userMessage" placeholder="Message" rows = "6"></textarea>
-              <button type = "submit" class = "submit-btn">Send Now</button>
+              <button type = "submit" class = "submit-btn" data-lang="Send Now">Send Now</button>
             </form>
           </div>
-
           <div class = "contact-right">
             <div>
-              <h2>Call Us</h2>
+              <h2 data-lang="Call Us" >Call Us</h2>
               <p class = "text">0687802700</p>
             </div>
             <div>
-              <h2>Send Email</h2>
-              <p class = "text">highqp00@gmail.com</p>
+              <h2 data-lang="Send Email">Send Email</h2>
+              <p class = "text">hqpteam@hqpacademy.com</p>
             </div>
           </div>
         </div>
       </div>
-      <div id="google_translate_element"></div>
     </section>
     <!-- end of contact section -->
 
@@ -550,20 +525,13 @@
           </a>
           
         </div>
-       
+        
       </div>
       
     </footer>
     <!-- end of footer -->
-    <!-- translait links -->
-    
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-      }
-      </script>
       
-      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
     <!-- jQuery -->
     <script src = "resources/jquery-3.5.1.js"></script>
     <!-- magnific popup -->
@@ -577,6 +545,7 @@
     <!-- custom js -->
     <script src="js/script.js" ></script>
     <script src="js/smtp.js"></script>
-    <script src="js/Login.js"></script>
+    <script src="js/LoginPack.js"></script>
+    <script src='js/lang.js'></script>
   </body>
 </html>

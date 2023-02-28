@@ -27,6 +27,9 @@ html{
 img{
     width: 100%;
 }
+.nav-item{
+    color: var(--night-rider)
+}
 a{
     text-decoration: none;
     color: var(--black);
@@ -124,6 +127,13 @@ section{
 .nav-item{
     padding: 0.6rem 0;
 }
+.active{
+    border-top: 2px solid var(--mount-meadow) ;
+}
+.icons{
+    width: 25px;
+}
+
 .nav-link{
     text-transform: uppercase;
     font-size: 0.95rem;
@@ -229,9 +239,15 @@ section{
 .feature-item{
     margin: 1.4rem 0;
     display: flex;
+    align-items: flex-start;
+}
+.feature-item .text{
+    display: flex;
+    align-self: flex-start;
+  
 }
 .feature-item div h3{
-    margin-top: 0;
+    
     font-size: 1.4rem;
     font-weight: 300;
     opacity: 0.85;
