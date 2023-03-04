@@ -12,7 +12,7 @@ links.forEach((el) => {
 });
 
 async function changeLang(value) {
-  const file = await fetch("lang/" + value + ".json");
+  const file = await fetch("../lang/" + value + ".json");
   const json = await file.json();
   const elements = document.querySelectorAll("[data-lang]");
 
